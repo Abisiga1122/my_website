@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login & Register Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+    .container {
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      width: 320px;
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    label {
+      display: block;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+    input {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    button {
+      width: 100%;
+      padding: 10px;
+      background: #28a745;
+      border: none;
+      color: white;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 15px;
+    }
+    button:hover {
+      background: #218838;
+    }
+    .form-link {
+      text-align: center;
+      margin-top: 10px;
+    }
+    .form-link a {
+      color: #007bff;
+      text-decoration: none;
+    }
+    .form-link a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container" id="login-form">
+  <h2>Login</h2>
+  <form action="login.php" method="POST">
+    <label for="login-email">Email</label>
+    <input type="email" id="login-email" name="email" placeholder="Enter email" required>
+
+    <label for="login-password">Password</label>
+    <input type="password" id="login-password" name="password" placeholder="Enter password" required>
+
+    <button type="submit">Login</button>
+    <div class="form-link">
+      Don't have an account? <a href="#register-form">Register</a>
+    </div>
+  </form>
+</div>
+
+<div class="container" id="register-form" style="margin-left: 20px;">
+  <h2>Register</h2>
+  <form action="register.php" method="POST">
+    <label for="reg-name">Full Name</label>
+    <input type="text" id="reg-name" name="fullname" placeholder="Enter full name" required>
+
+    <label for="reg-email">Email</label>
+    <input type="email" id="reg-email" name="email" placeholder="Enter email" required>
+
+    <label for="reg-password">Password</label>
+    <input type="password" id="reg-password" name="password" placeholder="Enter password" required>
+
+    <label for="reg-confirm">Confirm Password</label>
+    <input type="password" id="reg-confirm" name="confirm_password" placeholder="Confirm password" required>
+
+    <button type="submit">Register</button>
+    <div class="form-link">
+      Already have an account? <a href="#login-form">Login</a>
+</form>
+</div>
+
+<!-- APPLICATION FORM -->
+<div class="form-container">
+<h2>Application form</h2> 
+<form action="application.php"
+method="POST">
+
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wisdom Design</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Wisdom Design</h1>
+    </header>
+    <main>
+        <form id="wisdom-design-application-form">
+            <section>
+                <h2>Personal Details</h2>
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+</section>
+            <section>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+</section>
+            <section>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+</section>
+            <section>
+
+
+<label for="date">Date of birth:</label>
+<input type="date" name="Birth Date" required>
+</section>
+ <section>
+
+<label for="health">Are You Disable?:</label>
+ <label for="checkbox">Yes:</label>
+<input type="radio" name="Yes/No" required>
+<label for="checkbox">No:</label>
+<input type="radio" name="Yes/No" required>
+</section>
+ <section>
+<label for="health">what position do you?</label>
+    <select id="position" name="position" required>
+<option value="full time">SELECT ONE </option>
+<option value="full time">Full time</option>
+      <option value="Part time">Part time</option>
+      <option value="Certificate">Certificate</option>
+      <option value="others">Others</option>
+</section>
+ <section>
+
+                <h2>Father Details</h2>
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+</section>
+            <section>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+</section>
+            <section>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone">
+</section>
+            <section>
+
+<label for="job">Occupation:</label>
+<input type="job" name="Occupation Details" required>
+
+
+            </section>
+            <section>
+                <h2>Edutional Background</h2>
+                <label for="name-of-school-completed">Name Of SHS 1:</label>
+                <input type="text" id="Name-Of-School" name="SHS 1" required>
+</section>
+            <section>
+<label for="name-of-pragram-offered">Program Offered:</label>
+<input type="program" name="program" required>
+</section>
+<section>
+ <label for="resume">Results:</label>
+                <input type="file" id="resume" name="resume" required>
+</section>
+            <section>
+
+
+<label for="name-of-school-completed">Name Of SHS 2:</label>
+                <input type="text" id="Name-Of-School" name="SHS 2">
+</section>
+            <section>
+
+
+<label for="name-of-pragram-offered">Program Offered:</label>
+<input type="program" name="program">
+</section>
+<section>
+                <label for="resume">Results:</label>
+                <input type="file" id="resume" name="resume">
+</section>
+            <section>
+
+                
+                <h2>Marital Status</h2>
+                <label for="checkbox">Married:</label>
+<input type="radio" name="Yes/No" required>
+</section>
+ <section>
+<label for="checkbox">Single:</label>
+<input type="radio" name="Yes/No" required>
+</section>
+ <section>
+<label for="checkbox">Divorce:</label>
+<input type="radio" name="Yes/No" required>
+</section>
+ <section>
+
+
+                 
+           <h2>you can not edit this form when you submit this form</h2>
+
+<label for="acceptance">Do you aggree in our terms and conditions?:</label>
+ <label for="checkbox"></label>
+<input type="radio" name="Yes/No" required>
+</section>
+<section>
+            <button type="submit">Submit</button>
+
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2025 Company Name</p>
+    </footer>
+</body>
+</html>
